@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  flask:
+  flask-server:
     image: flask
     build:
       context: .
