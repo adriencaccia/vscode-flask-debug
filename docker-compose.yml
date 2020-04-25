@@ -8,5 +8,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - 5000:5000
+      - 10001:10001
     volumes:
       - .:/app:cached
