@@ -17,27 +17,18 @@ Reading the article is strongly recommended 😉.
     make install
     ```
 - Run the app
-  - Using `flask` runner
+  - Running as a top-level script
     - Server with Hot-Reloading
       ```bash
-      make flask
+      make script
       ```
     - Server with Debugger and Hot-Reloading
       ```bash
-      make flaskdebug
-      ```
-  - Using `gunicorn` runner
-    - Server with Hot-Reloading
-      ```bash
-      make gunicorn
-      ```
-    - Server with Debugger and Hot-Reloading
-      ```bash
-      make gunicorndebug
+      make scriptdebug
       ```
 
-If you want to run the app as a top-level script, checkout to the `flask-as-a-script` branch.
+If you want to run the app with either the `flask` or `gunicorn` runner, checkout to the `master` branch.
 
 ```bash
-git checkout flask-as-a-script
+git checkout master
 ```

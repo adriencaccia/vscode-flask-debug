@@ -1,10 +1,7 @@
 from flask import Flask
 from datetime import datetime
 import re
-from debugger import initialize_flask_server_debugger_if_needed
 
-
-initialize_flask_server_debugger_if_needed()
 
 app = Flask(__name__)
 
@@ -28,3 +25,11 @@ def hello_there(name):
 
     content = "Hello there, " + clean_name + "! It's " + formatted_now
     return content
+
+if __name__ == "__main__":
+    from debugger import initialize_flask_server_debugger_if_needed
+
+
+    initialize_flask_server_debugger_if_needed()
+
+    app.run("0.0.0.0", debug=True)

@@ -10,14 +10,8 @@ install: ## 🛠  setup the flask Docker container, install the requirements...
 
 
 ## Start the 🐳 Dockerized flask application in local environment
-flask:         ## 🌶       flask and hot-reload
-	docker-compose run --rm -e FLASK_APP=app.py -e FLASK_ENV=development --service-ports flask-server flask run --host 0.0.0.0
+script:        ## 🏗️       script and hot-reload
+	docker-compose run --rm -e FLASK_ENV=development --service-ports flask-server python app.py
 
-flaskdebug:    ## 🌶  + 🐛 flask, hot-reload and VS Code debugger
-	docker-compose run --rm -e DEBUGGER=True -e FLASK_APP=app.py -e FLASK_ENV=development --service-ports flask-server flask run --host 0.0.0.0
-
-gunicorn:      ## 🦄      gunicorn and hot-reload
-	docker-compose run --rm --service-ports flask-server gunicorn --reload --bind 0.0.0.0:5000 app:app
-
-gunicorndebug: ## 🦄 + 🐛 gunicorn, hot-reload and VS Code debugger
-	docker-compose run --rm -e DEBUGGER=True --service-ports flask-server gunicorn --reload --bind 0.0.0.0:5000 --timeout 3600 app:app
+scriptdebug:   ## 🏗️  + 🐛 script, hot-reload and VS Code debugger
+	docker-compose run --rm -e DEBUGGER=True -e FLASK_ENV=development --service-ports flask-server python app.py
