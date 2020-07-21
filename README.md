@@ -16,7 +16,7 @@ Reading the article is strongly recommended 😉.
     ```bash
     make install
     ```
-- Run the app
+- Run the app with `make` command :
   - Using `flask` runner
     - Server with Hot-Reloading
       ```bash
@@ -35,6 +35,12 @@ Reading the article is strongly recommended 😉.
       ```bash
       make gunicorndebug
       ```
+- Run the app with `VSCode Tasks`
+
+    ```bash
+    Press simultaniously CTRL + ALT + T and you will get a popup widow were you can choose your option 
+    ```
+    ![VSCode Task Options](/assets/png/vsCodeTasksOptions.PNG)
 
 If you want to run the app as a top-level script, checkout to the `flask-as-a-script` branch.
 
