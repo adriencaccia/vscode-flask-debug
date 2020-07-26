@@ -38,7 +38,7 @@ Reading the article is strongly recommended 😉.
 - Run the app with `VSCode Tasks`
 
     ```bash
-    Press simultaniously CTRL + ALT + T and you will get a popup widow were you can choose your option 
+    Press simultaniously CTRL + ALT + T and you will get a popup window were you can choose your option 
     ```
     ![VSCode Task Options](/assets/png/vsCodeTasksOptions.PNG)
 

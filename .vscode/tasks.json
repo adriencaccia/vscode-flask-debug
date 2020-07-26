@@ -5,6 +5,9 @@
         "label": "flask and hot-reload - no docker-compose",
         "type": "shell",
         "command": "docker run -it --rm -e FLASK_APP=app.py -e FLASK_ENV=development -p 5000:5000 -v ${PWD}:/app --name flaskcontainer flask flask run --host 0.0.0.0",
+        "windows": {
+          "command": "docker run -it --rm -e FLASK_APP=app.py -e FLASK_ENV=development -p 5000:5000 -v ${cwd}:/app --name flaskcontainer flask flask run --host 0.0.0.0"
+        },        
         "problemMatcher": []
       },
       {
